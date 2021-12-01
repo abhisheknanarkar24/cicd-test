@@ -6,6 +6,7 @@ node {
     def scannerHome = tool 'SonarQube';
     withSonarQubeEnv() {
       sh "${scannerHome}/bin/sonar-scanner"
+      
     }
   }
 }
